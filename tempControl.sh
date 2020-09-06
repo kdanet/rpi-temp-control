@@ -10,17 +10,17 @@ function tempCheck() {
 }
 
 function fanControl() {
+  date
   tempCheck
+  echo "CPU temperature: ${t}"
+  echo ""
   if [ $t -gt 50 ]
   then
-	echo "More 38 degrees"
 	gpio write 15 1
 	sleep 350
   else
-    	echo "Low 38 degrees"
 	gpio write 15 0
   fi
-  echo $t
 }
 
 while true;
