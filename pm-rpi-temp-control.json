@@ -1,0 +1,5 @@
+{
+	"name" : "temperature-control",
+	"script": "tempControl.sh",
+	"cwd": "/home/pi/Projects/rpi-temp-control"
+}
